@@ -6,18 +6,18 @@ const Header = () => {
     const {chosenPlayer,chosenOptions} = useContext(RosterContext);
 //     const date = moment("2018-05-18T04:00:00.000Z").format('DD MMM, YYYY');
 // console.log(date);
-console.log(chosenPlayer)
+
     return (
-        <div className='header text-center'>
-            <div id='guess'>Match the Player</div>
-            <div className='container justify-content-center' id='scoreboard'> 
-                <div className='row'>
-                    <div className='col-4'>{chosenPlayer.playerName}</div>
+        <div className='header '>
+            <div id=''>Match the Player</div>
+            <div className='' id=''> 
+                <div className=''>
+                    <div className=''>{chosenPlayer.playerName}</div>
                 </div>
             </div>
-            <div className='container justify-content-between' id='locboard'> 
-                <div className='row'>
-                    <div className='col-4'>Position:</div>
+            <div className='' id=''> 
+                <div className=''>
+                    <div className=''>Position:</div>
                 </div>
             </div>
             <div id='headerdate'></div>

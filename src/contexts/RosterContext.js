@@ -21,6 +21,7 @@ for (let i = 0; i < 5; i++){
     randomChoices.push(cleanRoster[randInt])
     cleanRoster.splice(randInt,1)
 }
+randomChoices.sort(() => Math.random() - 0.5);
 
 const [chosenOptions,setChosenOptions] = useState(randomChoices)
 
