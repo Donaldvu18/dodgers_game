@@ -3,7 +3,7 @@ import {RosterContext} from '../contexts/RosterContext';
 
 
 const Header = () => {
-    const {chosenPlayer,chosenOptions,status} = useContext(RosterContext);
+    const {chosenPlayer,chosenOptions,status,outcome} = useContext(RosterContext);
 //     const date = moment("2018-05-18T04:00:00.000Z").format('DD MMM, YYYY');
 // console.log(date);
 
@@ -12,7 +12,8 @@ const Header = () => {
             <div id='topline'>Match the Player</div>
             <div id='midline'>{chosenPlayer.playerName}</div>
             <div id='botline'>{chosenPlayer.playerPos}</div>
-            <div id='statusbar'><span id='placehold'></span>{status}</div>
+            {outcome ?<div id='statusbarw'><span id='placehold'></span>{status}</div> :
+            <div id='statusbar'><span id='placehold'></span>{status}</div>}
         </div>
     );
 

@@ -8,6 +8,7 @@ const {chosenPlayer,chosenOptions,outcome,setOutcome} = useContext(RosterContext
 
 
     const resetGame = ()=>{
+    
         window.location.reload(true);
     }
 
@@ -19,7 +20,7 @@ const {chosenPlayer,chosenOptions,outcome,setOutcome} = useContext(RosterContext
     <div className='' >
        {outcome ? <div className='container justify-content-center'>
            <div><img className='mt-3 congrats' src='/img/congrats.jpg'/></div><br/>
-           <button className='mb-3 btn btn-primary' onClick={resetGame}>Play Again?</button>
+           <button className='mb-3 btn btn-primary btn-lg' id='mybtn' onClick={resetGame}>Play Again?</button>
        </div> :
        (<div className='container mt-3 my-container'>
            <div className='row my-row justify-content-around'>
@@ -27,7 +28,7 @@ const {chosenPlayer,chosenOptions,outcome,setOutcome} = useContext(RosterContext
            <Choices selPlayer={chosenOptions[1]}/>
            <Choices selPlayer={chosenOptions[2]}/>
            </div>
-            <div className='row mt-4 my-row justify-content-around'>
+            <div className='row mt-5 my-row justify-content-around'>
            <Choices selPlayer={chosenOptions[3]}/>
            <Choices selPlayer={chosenOptions[4]}/>
            <Choices selPlayer={chosenOptions[5]}/>

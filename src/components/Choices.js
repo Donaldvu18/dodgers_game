@@ -14,7 +14,7 @@ const Choices = ({selPlayer}) => {
     const checkChoice = (player) =>{
         if(player.playerId===chosenPlayer.playerId){
             setOutcome(true);
-            setStatus('')
+            setStatus('CORRECT')
         } else {
             setTog(true)
             setStatus(status ? status+"!":'Incorrect');
