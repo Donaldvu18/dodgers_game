@@ -25,10 +25,15 @@ randomChoices.sort(() => Math.random() - 0.5);
 
 const [chosenOptions,setChosenOptions] = useState(randomChoices)
 
+// Initializing outcome to use for deciding whether or not to display winner page or choice boxes
+
 const [outcome,setOutcome]=useState(false)
 
+// Initializing status to use in header for incorrect choice feedback
+
+const [status,setStatus]=useState('')
     return(
-        <RosterContext.Provider value={{outcome,setOutcome,chosenPlayer,chosenOptions}}>
+        <RosterContext.Provider value={{outcome,setOutcome,chosenPlayer,chosenOptions,status,setStatus}}>
             {props.children}
         </RosterContext.Provider>
     )
