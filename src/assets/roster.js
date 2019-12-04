@@ -1,4 +1,4 @@
-module.exports=[
+const roster=[
 {playerId:1	, playerName:   "Pedro Baez"},
 {playerId:2	, playerName:   "Ross Stripling"},
 {playerId:3	, playerName:   "Dustin May"},
@@ -36,3 +36,5 @@ module.exports=[
 {playerId:35, playerName:	"Jedd Gyorko"},
 {playerId:36, playerName:	"Kyle Garlick"},
 {playerId:37, playerName:	"Austin Barnes"}]
+
+export default roster;
