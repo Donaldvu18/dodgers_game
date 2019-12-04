@@ -10,9 +10,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  height:100%;
+  /* padding-bottom:60px; */
 }
 
+*{
+  /* padding:0px;
+  margin:0px; */
+}
 .App {
   /* background-color:blue; */
   height: 100%;
@@ -20,10 +25,11 @@ body {
 .header {
     color:white;
     background-color:darkblue;
-    padding-top: .3rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-transform:uppercase;
-    font-weight:bold;
+    font-weight:800;
+    max-height:500px;
     
 }
 #statusbar{
@@ -38,25 +44,26 @@ body {
 #statusbarw{
   background-color:white;
   font-size:1.5rem;
-  color:green;
+  color:rgb(39, 216, 39);
 }
 #placehold{
   display:inline-block;
 }
 #topline{
-  font-size:2rem;
+  font-size:1.8rem;
   font-weight:normal;
 }
 
 #midline{
   font-size:2.5rem;
-  letter-spacing: .4rem;
+  letter-spacing: .35rem;
+  line-height:5rem;
 }
 
 #botline{
-  font-size:2rem;
+  font-size:1.8rem;
   font-weight:normal;
-  margin-bottom:.5rem;
+  margin-bottom:1rem;
 }
 .grid {
 flex-wrap:wrap;
@@ -66,6 +73,7 @@ justify-content:center;
 background-color:gray;
 /* height:40% */
 }
+
 .choices {
   /* width:150px;
   height:400px;
@@ -74,10 +82,36 @@ background-color:gray;
   box-shadow: 15px 10px 10px gray;
   /* padding:3rem; */
   width:60%;
+  transition:.7s;
  
 }
+
+.contimg {
+  max-width:100%;
+  max-height:200px;
+}
+.headerlogo{
+
+}
+.headerbox{
+  justify-content:center;
+  max-height:500px;
+}
+
+.headimg {
+  /* background-image:url(./assets/img/dodgers2.png); 
+  background-size:contain;
+  background-repeat: no-repeat; */
+
+}
+.choices:hover{
+  opacity:70%;
+  /* background:rgba(76, 175, 80, 0.3) */
+
+}
 .congrats {
-  width:25%;
+  height:70%;
+  border:3px solid blue;
 }
 .fadeout{
   opacity:0;
@@ -102,14 +136,29 @@ background-color:gray;
   max-height:100%;
 }
 
-.play{
+.footer-top{
+  background-color:white;
+  /* border:3px solid darkblue; */
+  font-size:.7rem;
+}
+.footer{
+  background-color:darkblue;
+  color:white;
+  left:0;
+  height:70px;
+  right:0;
+  font-size:.8rem;
+  position: absolute;
+  
+}
+/* .play{
   background-image:url(./assets/img/player01.jpg); 
   background-size:contain;
   background-repeat: no-repeat;
   max-height:150px;
   max-width:400px;
   
-}
+} */
 
 /* 
 

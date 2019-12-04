@@ -17,10 +17,10 @@ const {chosenPlayer,chosenOptions,outcome,setOutcome} = useContext(RosterContext
     return(
     
   
-    <div className='' >
+    <div className='yuh' >
        {outcome ? <div className='container justify-content-center'>
-           <div><img className='mt-3 congrats' src='/img/congrats.jpg'/></div><br/>
-           <button className='mb-3 btn btn-primary btn-lg' id='mybtn' onClick={resetGame}>Play Again?</button>
+           <img className='mt-4 congrats' src='/img/dodgers_congrats.jpg'/><br/>
+           <button className='mt-3 mb-3 btn btn-primary btn-lg' id='mybtn' onClick={resetGame}>Play Again?</button>
        </div> :
        (<div className='container mt-3 my-container'>
            <div className='row my-row justify-content-around'>

@@ -10,11 +10,11 @@ const Choices = ({selPlayer}) => {
     // const imgurl='../img/team0'+option.teamId+'.jpg'
     const [tog,setTog] =useState(false) 
     const classtest=tog? 'fadeout ':''
-    const classgo=classtest + 'col-3'
+    const classgo=classtest + 'col-3 highlight'
     const checkChoice = (player) =>{
         if(player.playerId===chosenPlayer.playerId){
             setOutcome(true);
-            setStatus('CORRECT')
+            setStatus('CORRECT!')
         } else {
             setTog(true)
             setStatus(status ? status+"!":'Incorrect');

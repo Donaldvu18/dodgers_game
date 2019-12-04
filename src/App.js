@@ -1,10 +1,11 @@
 import React ,{useEffect} from 'react';
 import './App.css';
 import RosterContextProvider from './contexts/RosterContext';
-import roster from './assets/roster.js'
-import Header from './components/Header.js'
-import Grid from './components/Grid.js'
-// add footer ,dodgers logo in header, counter for wins, add positions, change congrats photo
+import roster from './assets/roster'
+import Header from './components/Header'
+import Grid from './components/Grid'
+import Footer from './components/Footer'
+// add footer ,dodgers logo in header, counter for wins, add positions, change congrats photo, fade red when clicking wrong photo, change box shadow a bit gray looks musty
 function App() {
   useEffect(
     () => {
@@ -18,7 +19,9 @@ function App() {
       <RosterContextProvider roster={roster}>
         <Header/> 
         <Grid/>
+       
         </RosterContextProvider>
+        <Footer/>
     </div>
   )
 }
