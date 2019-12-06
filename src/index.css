@@ -79,7 +79,7 @@ background-color:gray;
   height:400px;
   background-color:gray; */
   border:3px solid blue;
-  box-shadow: 15px 10px 10px gray;
+  box-shadow: 15px 17px 10px rgb(28, 57, 66);
   /* padding:3rem; */
   width:60%;
   transition:.7s;
