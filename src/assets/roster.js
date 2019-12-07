@@ -7,7 +7,6 @@ const roster=[
 {playerId:6	, playerName:   "Clayton Kershaw", playerPos:'Ace Pitcher'},
 {playerId:7	, playerName:   "Joe Kelly", playerPos:'Pitcher'},
 {playerId:8	, playerName:   "Kenley Jansen", playerPos:'Pitcher'},
-{playerId:9	, playerName:   "Victor Gonzalez", playerPos:'Pitcher'},
 {playerId:10, playerName:	"Julio Urias", playerPos:'Pitcher'},
 {playerId:11, playerName:	"Walker Buehler", playerPos:'Pitcher'},
 {playerId:12, playerName:	"Matt Beaty", playerPos:'1B'},

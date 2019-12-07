@@ -10,7 +10,7 @@ const Choices = ({selPlayer}) => {
     // const imgurl='../img/team0'+option.teamId+'.jpg'
     const [tog,setTog] =useState(false) 
     const classtest=tog? 'fadeout ':''
-    const classgo=classtest + 'col-3 highlight'
+    const classgo=classtest + 'col-6 col-md-4 highlight p-3'
     const checkChoice = (player) =>{
         if(player.playerId===chosenPlayer.playerId){
             setOutcome(true);
@@ -21,8 +21,8 @@ const Choices = ({selPlayer}) => {
         }
     }
     let imgurl='/img/player0'+selPlayer.playerId+'.jpg'
-    return(<div className={classgo} onClick={()=> checkChoice(selPlayer)}>
-        <img className='choices' src={imgurl} /></div>
+    return(<div className={classgo} id='choices' onClick={()=> checkChoice(selPlayer)}>
+        <img className='img-fluid mb-3' src={imgurl} /></div>
         // <div className={classgo} id='mybox' ><div className='image-container'></div>{selPlayer.playerName}</div>
     )
 }

@@ -74,7 +74,7 @@ background-color:gray;
 /* height:40% */
 }
 
-.choices {
+.img-fluid {
   /* width:150px;
   height:400px;
   background-color:gray; */
@@ -149,6 +149,31 @@ background-color:gray;
   right:0;
   font-size:.8rem;
   position: absolute;
+  
+}
+
+@media (max-width:1200px){
+  .congrats {
+    width:60%;
+    border:3px solid pink;
+  }
+  #topline{
+    font-size:1rem;
+    font-weight:normal;
+  }
+
+  #botline{
+    font-size:1rem;
+    font-weight:normal;
+  }
+  
+  #midline{
+    font-size:1.8rem;
+    letter-spacing: .35rem;
+    line-height:3rem;
+    color:white;
+  }
+
   
 }
 /* .play{

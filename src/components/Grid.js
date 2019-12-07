@@ -27,8 +27,7 @@ const {chosenPlayer,chosenOptions,outcome,setOutcome} = useContext(RosterContext
            <Choices selPlayer={chosenOptions[0]}/>
            <Choices selPlayer={chosenOptions[1]}/>
            <Choices selPlayer={chosenOptions[2]}/>
-           </div>
-            <div className='row mt-5 my-row justify-content-around'>
+ 
            <Choices selPlayer={chosenOptions[3]}/>
            <Choices selPlayer={chosenOptions[4]}/>
            <Choices selPlayer={chosenOptions[5]}/>
