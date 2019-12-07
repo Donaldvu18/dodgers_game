@@ -18,6 +18,7 @@ function App() {
     
       <RosterContextProvider roster={roster}>
         <Header/> 
+        
         <Grid/>
        
         </RosterContextProvider>
