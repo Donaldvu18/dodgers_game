@@ -21,8 +21,8 @@ const Choices = ({selPlayer}) => {
         }
     }
     let imgurl='/img/player0'+selPlayer.playerId+'.jpg'
-    return(<div className={classgo} id='choices' onClick={()=> checkChoice(selPlayer)}>
-        <img className='img-fluid choicebox mb-3' src={imgurl} /></div>
+    return(<div className={classgo} id='choices' >
+        <img className='img-fluid choicebox mb-3' src={imgurl} onClick={()=> checkChoice(selPlayer)}/></div>
         // <div className={classgo} id='mybox' ><div className='image-container'></div>{selPlayer.playerName}</div>
     )
 }

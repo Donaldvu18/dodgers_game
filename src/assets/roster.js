@@ -33,5 +33,5 @@ const roster=[
 {playerId:33, playerName:	"Edwin Rios",playerPos:'1B/3B'},
 {playerId:36, playerName:	"Kyle Garlick",playerPos:'Outfielder'},
 {playerId:37, playerName:	"Austin Barnes",playerPos:'Catcher'}]
-
+// https://www.cbssports.com/mlb/teams/LAD/los-angeles-dodgers/roster/
 export default roster;

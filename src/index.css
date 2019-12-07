@@ -20,7 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height:100%;
   /* width:100%; */
-  
+  margin: 0 0 100px;
   /* padding-bottom:60px; */
 }
 
@@ -28,13 +28,13 @@ body {
   /* padding:0px;
   margin:0px; */
 }
-.App {
-  /* background-color:blue; */
-  height: 100%;
+/* .App {
+   background-color:blue; 
+  max-height:100%;
   margin:0;
-  width:100%;
+  max=width:100%;
   padding:0;
-}
+} */
 .header {
     color:white;
     background-color:darkblue;
@@ -73,9 +73,6 @@ body {
   /* padding:0; */
 }
 
-#mybtn{
-  background-color:darkblue;
-}
 #statusbarw{
   background-color:white;
   font-size:1.2rem;
@@ -85,6 +82,10 @@ body {
   color:rgb(39, 216, 39);
   font-weight:800;
 }
+#mybtn{
+  background-color:darkblue;
+}
+
 #placehold{
   display:inline-block;
 }
@@ -124,30 +125,20 @@ background-color:gray;
 
 .choicebox{
   border:3px solid darkblue;
-  box-shadow: 15px 17px 10px rgb(28, 57, 66);
+  box-shadow: 18px 17px 10px rgb(28, 57, 66);
   /* padding:3rem; */
-  width:45%;
+  width:50%;
   transition:.7s;
 }
 
-.headerlogo{
-
-}
-
-
-.headimg {
-  /* background-image:url(./assets/img/dodgers2.png); 
-  background-size:contain;
-  background-repeat: no-repeat; */
-
-}
 .choices:hover{
   opacity:70%;
   /* background:rgba(76, 175, 80, 0.3) */
 
 }
 .congrats {
-  height:70%;
+  margin-top:3rem;
+  height:50%;
   border:3px solid blue;
 }
 .fadeout{
@@ -162,6 +153,7 @@ background-color:gray;
   /* background-color:yellow; */
   display:flex;
   /* flex-direction: column; */
+  min-height:600px;
 }
 .my-container{
   /* background-color:orange;
@@ -194,6 +186,7 @@ background-color:gray;
   font-size:.8rem;
   bottom:0;
   position:relative;
+  
 }
 .yuh {
   /* background-color:pink; */
@@ -205,6 +198,9 @@ background-color:gray;
     width:40%;
     /* border:3px solid pink; */
   }
+  #topline{
+    font-size:1.5rem;
+  }
   #midline{
     font-size:2rem;
     letter-spacing: .35rem;
@@ -215,7 +211,8 @@ background-color:gray;
   }
   #botline{
     /* margin-bottom:0rem; */
-  
+  /* color:green; */
+  font-size:1.5rem;
   
   }
   .headimg{
@@ -229,9 +226,50 @@ background-color:gray;
   }
 }
 
-@media (max-width:800px){
+
+@media(max-width:1000px){
   .congrats {
-    width:60%;
+    width:40%;
+    /* border:3px solid pink; */
+  }
+  #topline{
+    font-size:1rem;
+  }
+  #midline{
+    font-size:1.5rem;
+    letter-spacing: .25rem;
+    line-height:2rem;
+    /* color:white; */
+    /* padding-top:1rem; */
+    /* color:pink; */
+  }
+  #botline{
+    /* margin-bottom:0rem; */
+  /* color:black; */
+  font-size:1rem;
+  
+  }
+  .headimg{
+    width:130px;
+  }
+  .headerbox{
+    line-height:3rem;
+  }
+  .footer{
+    margin-top:4rem;
+  }
+}
+@media (max-width:700px){
+  #statusbar{
+    font-size:1rem;
+  }
+
+  #statusbarw{
+    font-size:1rem;
+  }
+
+  .congrats {
+    width:auto;
     /* border:3px solid pink; */
   }
   .headerbox{
@@ -239,6 +277,7 @@ background-color:gray;
   }
   #topline{
     font-size:.8rem;
+    /* color:pink; */
     font-weight:normal;
   }
 
@@ -246,6 +285,7 @@ background-color:gray;
     font-size:.8rem;
     font-weight:normal;
     margin-bottom:0;
+    /* color:yellow; */
   }
   
   #midline{
@@ -254,7 +294,13 @@ background-color:gray;
     line-height:1.3rem;
     color:white;
   }
-
+  .supcontainer{
+    /* height:100%; */
+    /* background-color:yellow; */
+    display:flex;
+    /* flex-direction: column; */
+    min-height:500px;
+  }
 
   
 }

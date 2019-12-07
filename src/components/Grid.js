@@ -19,7 +19,7 @@ const {chosenPlayer,chosenOptions,outcome,setOutcome} = useContext(RosterContext
   
     <div className='supcontainer' >
        {outcome ? <div className='container justify-content-center'>
-           <img className='mt-4 congrats' src='/img/dodgers_congrats.jpg'/><br/>
+           <img className='mt-4 img-fluid congrats' src='/img/dodgers_congrats.jpg'/><br/>
            <button className='mt-3 mb-3 btn btn-primary btn-lg' id='mybtn' onClick={resetGame}>Play Again?</button>
        </div> :
        (<div className='container mt-0 my-container'>
