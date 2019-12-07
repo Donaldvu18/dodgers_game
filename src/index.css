@@ -38,8 +38,8 @@ body {
 .header {
     color:white;
     background-color:darkblue;
-    padding-top: .6rem;
-    padding-bottom: 1.5rem;
+    padding-top: .5rem;
+    /* padding-bottom: 0rem; */
     text-transform:uppercase;
     font-weight:800;
     width:100%;
@@ -54,8 +54,11 @@ body {
   /* background-color:pink; */
   /* max-height:500px; */
 }
-.headcont{
- 
+
+.headimg{
+  width:170px;
+  margin-top:.3rem;
+  
 }
 
 #statusbar{
@@ -118,9 +121,7 @@ background-color:gray;
   height:400px;
   background-color:gray; */
 }
-.headimg{
-  width:170px;
-}
+
 .choicebox{
   border:3px solid darkblue;
   box-shadow: 15px 17px 10px rgb(28, 57, 66);
@@ -189,9 +190,10 @@ background-color:gray;
   left:0;
   height:70px;
   right:0;
-  margin-top:2.2rem;
+  margin-top:3rem;
   font-size:.8rem;
-  
+  bottom:0;
+  position:relative;
 }
 .yuh {
   /* background-color:pink; */
@@ -230,24 +232,29 @@ background-color:gray;
 @media (max-width:800px){
   .congrats {
     width:60%;
-    border:3px solid pink;
+    /* border:3px solid pink; */
+  }
+  .headerbox{
+    align-items:center;
   }
   #topline{
-    font-size:1rem;
+    font-size:.8rem;
     font-weight:normal;
   }
 
   #botline{
-    font-size:1rem;
+    font-size:.8rem;
     font-weight:normal;
+    margin-bottom:0;
   }
   
   #midline{
-    font-size:1.8rem;
-    letter-spacing: .35rem;
-    line-height:2rem;
+    font-size:1.2rem;
+    letter-spacing: .2rem;
+    line-height:1.3rem;
     color:white;
   }
+
 
   
 }

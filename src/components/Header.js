@@ -11,7 +11,7 @@ const Header = () => {
         <React.Fragment>
         <div className='header pb-1 justify-content-center'>
             {/* <div className='fluid-container'> */}
-                <div className='row headerbox'>
+                <div className='row headerbox '>
                     <div className='col-3 pb-2 headimg'>
                         <img className='img-fluid headimg b-0' src='/img/dodgers3.png' />
                     </div>
