@@ -5,7 +5,7 @@ import roster from './assets/roster';
 import Header from './components/Header';
 import Grid from './components/Grid';
 import Footer from './components/Footer';
-import './index.css';
+// import './index.css';
 // add footer ,dodgers logo in header, counter for wins, add positions, change congrats photo, fade red when clicking wrong photo, change box shadow a bit gray looks musty, add hover fot play agn
 function App() {
   useEffect(
