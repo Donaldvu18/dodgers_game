@@ -147,8 +147,8 @@ background-color:gray;
   transition:.7s;
 }
 
-.choices:hover{
-  opacity:70%;
+.choicebox:hover{
+  opacity:60%;
   /* background:rgba(76, 175, 80, 0.3) */
 
 }
