@@ -145,10 +145,12 @@ background-color:gray;
   /* padding:3rem; */
   width:50%;
   transition:.7s;
+  -webkit-backface-visibility: hidden;
 }
 
 .choicebox:hover{
   opacity:60%;
+  
   /* background:rgba(76, 175, 80, 0.3) */
 
 }
